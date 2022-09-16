@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.2-web/css/all.css">
+	<link rel="stylesheet" href="FA/css/font-awesome.css">
+	<style type="text/css">
+		
+		*{
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+
+		@font-face {
+		    font-family: "yekan";
+		    src:url(fonts/Yekan.eot) ,
+		    url(fonts/Yekan.eot?#iefix) format("embedded-opentype"),
+		    url(fonts/Yekan.woff) format("woff"),
+		    url(fonts/Yekan.ttf) format("truetype"),
+		    url(fonts/Yekan.svg#BYekan) format("svg");
+		    font-weight: normal;
+		    font-style: normal;
+		    unicode-range: U+0600-U+06FF;
+		}
+		@font-face{
+			font-family:bnazanin ;
+			src: url(fonts/BNazanin.ttf) format("truetype");
+			   font-weight: normal;
+		    font-style: normal;
+		    unicode-range: U+0600-U+06FF;
+
+		}
+		@font-face {
+			font-family: titr;
+			src: url(fonts/BTitrBold.ttf) format("truetype");
+			   font-weight: normal;
+		    font-style: normal;
+		    unicode-range: U+0600-U+06FF;
+		}
+
+		.clearfix {
+	  *zoom: 1;
+	}
+
+	.clearfix:before,
+	.clearfix:after {
+	  display: table;
+	  line-height: 0;
+	  content: "";
+	}
+
+	.clearfix:after {
+	  clear: both;
+	}
+
+
+::-webkit-scrollbar{
+	width: 10px;
+	height: 8px;
+	
+}
+::-webkit-scrollbar-track{
+	border-radius: 10px;
+	background: violet;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px ;
+	background: burlywood;
+}
+
+
+
+
+
+
+	.ads{
+		width: 100%;
+		height:35px ;
+		background: url("ads.jpg") no-repeat center center/cover ;
+	}
+	.banner{
+		width: 95%;
+		height: 52px;
+		border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+		margin: auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction:row-reverse;
+		align-items: center;
+	}
+	.menuh{
+		width: 30px;
+
+	}
+	.logo{
+		width: 150px;
+		flex-grow: 1;
+	}
+	.logo img {
+		display: block;
+		padding-left: 35%;
+	}
+	
+	@media screen and (min-width:600px ){
+		.logo img{
+
+			padding-left: 42%;
+		}
+		
+	}
+
+
+	.help {
+		width: 50px;
+	}
+
+	.searchbox{
+		width: 95%;
+		height: 62px;
+		border-bottom:1px solid rgba(200, 200, 200, 0.5) ;
+		margin: auto;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		box-sizing: border-box;
+
+
+
+
+	}
+.searchbox input{
+	width:62% ;
+	height: 42px;
+	border-radius:7px ;
+	background:#f0f0f1 url("searchengin.svg") 99% 8px no-repeat;
+	background-size: 25px 25px;
+	direction: rtl;
+	padding-right:40px ;
+	font-family: yekan;
+	font-size: 12px;
+	flex-grow: 1;
+}
+.vorod{
+	width: 130px;
+	height: 40px;
+	display: flex;
+	flex-direction:row-reverse;
+}
+
+.vorodicon{
+
+	width: 30px;
+	height: 40px;
+	padding-right: 35px;
+	direction: rtl;
+	font-size:24px;
+	padding-top: 7px;
+
+}
+.vorodtext{
+	width: 10px;
+	height: 41px;
+	direction: rtl;
+	padding-right: 5px;
+	font-size:15px;
+	font-family: yekan;
+
+}
+.vorod a{
+	display: flex;
+	flex-direction: row-reverse;
+	color: #424750;
+	text-decoration: none;
+
+}
+.sabad{
+	width: 20px;
+	height: 40px;
+	padding-top: 15px;
+	font-size:23px ;
+	color: #424750;
+}
+.selectlocation{
+	width: 95%;
+	height: 40px;
+	margin: auto;
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+.selectlocation i{
+	width: 30px;
+	color:#f9a825 ;
+	font-size: 17px;
+	padding-top:11px;
+}
+.selectlocation p{
+
+	font-family: yekan;
+	font-size: 12px;
+	direction: rtl;
+	width: 70%;
+	display: inline-block;
+	padding-right: 15px;
+	padding-top: 8px;
+	color: #7c8597;
+	flex-grow: 1;
+}
+.selectlocation select{
+
+	width: 20px;
+	height: 40px;
+}
+
+
+
+.select_box{
+	width: 100%;
+	height: 40px;
+	border-top:1px solid rgba(200, 200, 200, 0.5) ;
+	border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+	display: flex;
+	flex-direction:row-reverse;
+	align-items: center;
+	text-align: center;
+	font-family: yekan;
+
+}
+.select_box_one{
+	width: 50%;
+	border-bottom: 5px solid #ef394e ;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	color:#ef394e ;
+	font-size: 15px;
+}
+.select_box_two{
+	width: 50%;
+	color: #7c8597;
+}
+.box_login{
+	width: 95%;
+	height: 110px;
+	border: 1px solid gray;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 1px 4px gray;
+	margin-top:25px ;
+	box-sizing: border-box;
+}
+.text_box{
+	width: 95%;
+	height: 40px;
+	
+	margin: auto;
+	margin-top: 20px;
+	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
+	box-sizing: border-box;
+	align-items: center;
+
+
+}
+.icon_h1{
+	width: 20px;
+	height: 20px;
+	
+	color: #f9a825;
+	font-size: 20px;
+}
+.text_h1{
+	width: 40%;
+	height: 30px;
+	font-family: yekan;
+	font-size: 15px;
+	font-weight: bold;
+	
+	flex-grow: 1;
+	padding-bottom: 5px;
+	padding-right: 10px;
+}
+.text_link_icon{
+	width: 20px ;
+	height: 20px;
+}
+.text_h6{
+	width: 390px;
+	direction: rtl;
+	font-size: 12px;
+	font-family: yekan;
+	color: #9e9e9e;
+	/*display: flex;
+	flex-direction: row;*/
+	padding-right: 45px;
+	float: right;
+	
+}
+.empty_bag{
+	width:95% ;
+	height: 400px;
+	
+	margin: auto;
+}
+.bag_icon{
+	width: 200px;
+	height:200px;
+	margin: auto;
+	margin-top: 40px;
+}
+.bag_icon img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.bag_text_h1{
+	width: 300px;
+	height: 45px;
+	
+	margin: auto;
+	text-align: center;
+	font-family: yekan ;
+	font-size: 15px;
+	font-weight: bold;
+}
+.bag_text_h6{
+	width: 300px;
+	height: 50px ;
+	
+	margin: auto;
+	text-align: center;
+	font-family: yekan ;
+	font-size: 12px;
+	color: #9e9e9e;
+
+}
+.bag_offer{
+	width: 400px;
+	height: 35px;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+}
+.offer{
+	padding:0 15px;
+	font-size: 15px; 
+	color:#19bfd4 ;
+	font-family: yekan;
+	font-weight: bold;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+.offer a{
+	color:#19bfd4 ;
+	text-decoration: none;
+}
+.borderx{
+	height: 20px;
+	border-left: 1px solid #9e9e9e;
+	
+}
+.border_bottem_one{
+	border-bottom: 1px solid #e1e1e1;
+	margin: auto;
+}
+.empty_box{
+	width: 100%;
+	height: 20px;
+
+}
+.empty_box_gray{
+	width: 100%;
+	height: 10px;
+	background: #f0f0f1;
+}
+.out_box{
+	width: 100%;
+	height: 100px;
+}
+	</style>
+	<title>Buy Page Digikala</title>
+</head>
+<body>
+	<div class="banner">
+			<div class="menuh"><i class="fa-solid fa-bars"></i></div>
+			<div class="logo"><a href="Project3.html"><img src="logo.svg" alt=""></a></div>
+			<div class="help"><i class="far fa-message"></i></div>
+		</div>
+
+			<div class="searchbox">
+			<input type="text" placeholder= " جستجو "  >
+			<div class="vorod">
+				<a href="login-page.html">
+					<div class="vorodicon"><i class="fas fa-right-to-bracket fa-rotate-180 "></i></div>
+					<div class="vorodtext"> ورود </div>
+				</a>
+			</div>
+			
+			<a href="">
+				<div class="sabad"><i class="fas fa-cart-shopping fa-flip-horizontal"></i></div>
+			</a>
+		</div>
+		<div class="selectlocation">
+				<i class="fas fa-location-dot"></i>
+				<p>لطفا شهر خود را انتخاب کنید     </p> 
+
+				<select name="Name City" id="" >
+					<option value="#">select a city</option>
+					<option value="ardabi">Ardabil</option>
+					<option value="rezvan">Rezvan</option>
+				</select>
+		</div>
+
+
+
+		<div class="select_box">
+			<div class="select_box_one">  سبد خرید </div>
+			<div class="select_box_two"> خرید بعدی  </div>
+		</div>
+		<div class="box_login">
+			<div class="text_box">    
+				<div class="icon_h1"><i class="fas fa-right-to-bracket fa-rotate-180 "></i></div>
+				<div class="text_h1">   ورود به حساب کاربری   </div>
+				<div class="text_link_icon"><i class="fas fa-arrow-left"></i></div>
+			  </div>
+			<div class="text_h6">    برای مشاهده محصولاتی که پیش تر به سبد خرید خود اضافه کرده ای وارد شوید   </div>
+		</div>
+
+
+		<div class="empty_bag">
+			<div class="bag_icon">
+				<img src="empty-cart.svg" alt="">
+			</div>
+			<div class="bag_text_h1">	!سبد خرید شما خالی است	</div>
+			<div class="bag_text_h6">
+				:می توانید برای مشاهده محصولات بیشتر به صفحات زیر بروید
+			</div>
+			<div class="bag_offer">
+				<div class="offer offer_one"><a href="">
+					تخفیف و پیشنهادها
+				</a></div>
+				<div class="borderx"></div>
+				<div class="offer offer_two">
+					<a href="">		محصولات پرفروش روز</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="border_bottem_one"></div>
+		<div class="empty_box"></div>
+		<div class="empty_box_gray"></div>
+		<div class="out_box"></div>
+</body>
+</html>
